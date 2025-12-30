@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken"
-import Admin from "../models/Admin"
+import Admin from "../models/Admin.js"
 
 const authMiddleware = async (req, res, next) => {
     try {

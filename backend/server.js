@@ -4,6 +4,7 @@ import cors from "cors"
 import morgan from "morgan"
 import connectDB from "./config/db.js"
 import adminRoutes from "./routes/admin.routes.js"
+import productRoutes from "./routes/product.routes.js"
 
 const app = express()
 connectDB()
@@ -17,7 +18,7 @@ app.use(morgan("dev"))
 
 // routes
 app.use("/api/admin", adminRoutes)
-
+app.use("/api/products", productRoutes)
 
 
 
