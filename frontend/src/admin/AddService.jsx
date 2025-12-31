@@ -2,7 +2,7 @@ import { useState } from "react";
 import axiosInstance from "../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 import { FaPlus, FaSave, FaSpinner, FaTimesCircle, FaCheckCircle, FaImage, FaHeading, FaTag, FaAlignLeft } from 'react-icons/fa';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function AddService() {
@@ -42,11 +42,13 @@ export default function AddService() {
                 image: ""
             })
 
+            toast.success('Service added successfully!');
             setTimeout(() => {
                 navigate("/admin/dashboard")
             }, 2000)
 
         } catch (err) {
+            toast.error('Failed to add service');
             setError(err.response?.data?.message || "Failed to add service")
         } finally {
             setLoading(false)

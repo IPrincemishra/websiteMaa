@@ -11,6 +11,7 @@ import Dashboard from "./admin/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AddService from "./admin/AddService";
 import AdminLayout from "./admin/AdminLayout";
+import ManageServices from "./admin/ManageServices";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         >
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="add-service" element={<AddService />} />
+          <Route path="manage-services" element={<ManageServices />} />
         </Route>
 
         {/* Fallback */}

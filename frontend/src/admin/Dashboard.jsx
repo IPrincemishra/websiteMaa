@@ -40,7 +40,9 @@ const Dashboard = () => {
                     </div>
 
                     {/* Manage Services Card */}
-                    <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border border-gray-100">
+                    <div
+                        onClick={() => navigate("/admin/manage-services")}
+                        className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border border-gray-100">
                         <div className="flex items-start justify-between mb-6">
                             <div className="bg-blue-100 p-4 rounded-full">
                                 <FaCogs className="text-3xl text-blue-600" />
