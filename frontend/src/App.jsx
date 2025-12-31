@@ -9,6 +9,8 @@ import Services from "./pages/Services";
 import Login from "./admin/Login";
 import Dashboard from "./admin/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import AddService from "./admin/AddService";
+import AdminLayout from "./admin/AdminLayout";
 
 const App = () => {
   return (
@@ -24,11 +26,17 @@ const App = () => {
 
         {/* Admin */}
         <Route path="/admin/login" element={<Login />} />
-        <Route path="/admin/dashboard" element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        } />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminLayout />
+            </ProtectedRoute>
+          }
+        >
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="add-service" element={<AddService />} />
+        </Route>
 
         {/* Fallback */}
         <Route path="*" element={<NotFound />} />
