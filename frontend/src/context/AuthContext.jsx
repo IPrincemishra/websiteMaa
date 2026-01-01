@@ -10,12 +10,26 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        if (token) {
-            setLoading(false)
-        } else {
-            setAdmin(null)
-            setLoading(false)
+
+        const loadAdmin = async () => {
+            if (!token) {
+                setLoading(false)
+                return
+            }
+
+            try {
+                const res = await axiosInstance.get("/admin/me")
+                setAdmin(res.data.admin)
+            } catch (err) {
+                localStorage.removeItem("token")
+                setToken(null)
+                setAdmin(null)
+            } finally {
+                setLoading(false)
+            }
         }
+
+        loadAdmin()
     }, [token])
 
     const login = async (credentials) => {
