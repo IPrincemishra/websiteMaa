@@ -70,3 +70,46 @@ export const deleteProduct = async (req, res) => {
         })
     }
 }
+
+// * /api/products - UPDATE - Delete Product by :ID
+
+export const updateProduct = async (req, res) => {
+    try {
+        const { title, category, description, image } = req.body;
+
+        const updatedProduct = await Product.findByIdAndUpdate(
+            req.params.id,
+            { title, category, description, image },
+            { new: true, runValidators: true }
+        );
+
+        if (!updatedProduct) {
+            return res.status(404).json({
+                message: "Service not found!"
+            });
+        }
+
+        res.status(200).json(updatedProduct);
+
+    } catch (error) {
+        console.error("UPDATE ERROR:", error);
+        res.status(500).json({
+            message: "Failed to update service!"
+        });
+    }
+};
+
+
+export const getProductById = async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.id);
+
+        if (!product) {
+            return res.status(404).json({ message: "Service not found" });
+        }
+
+        res.status(200).json({ product });
+    } catch (error) {
+        res.status(500).json({ message: "Failed to fetch service" });
+    }
+};
