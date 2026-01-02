@@ -12,6 +12,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import AddService from "./admin/AddService";
 import AdminLayout from "./admin/AdminLayout";
 import ManageServices from "./admin/ManageServices";
+import EditService from "./admin/EditService";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="add-service" element={<AddService />} />
           <Route path="manage-services" element={<ManageServices />} />
+          <Route path="edit-service/:id" element={<EditService />} />
         </Route>
 
         {/* Fallback */}

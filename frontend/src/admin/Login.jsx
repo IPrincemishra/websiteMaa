@@ -24,7 +24,7 @@ const Login = () => {
         if (result.success) {
             navigate("/admin/dashboard")
         } else {
-            setError(result.message)
+            setError("Server Error !")
         }
     }
 
