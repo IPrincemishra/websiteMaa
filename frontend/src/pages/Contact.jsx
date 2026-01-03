@@ -27,7 +27,7 @@ export default function Contact() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* 1. HERO SECTION: Responsive Typography & Padding */}
+
             <section className="pt-28 pb-16 md:pt-40 md:pb-32 bg-slate-900 text-center relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
@@ -41,11 +41,9 @@ export default function Contact() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent opacity-50" />
             </section>
 
-            {/* 2. MAIN CONTENT: Adaptive Grid Layout */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 -mt-10 md:-mt-20 pb-20 relative z-20">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
 
-                    {/* LEFT COLUMN: Contact Details (Order 2 on mobile, 1 on desktop) */}
                     <div className="lg:col-span-5 space-y-6 order-2 lg:order-1">
                         <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 shadow-xl shadow-slate-200/60 border border-slate-100">
                             <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 md:mb-8">Contact Information</h2>
@@ -60,7 +58,8 @@ export default function Contact() {
                                         <div className={`w-10 h-10 md:w-12 md:h-12 ${item.color} rounded-xl md:rounded-2xl flex items-center justify-center text-lg transition-transform group-hover:scale-110 shrink-0`}>
                                             {item.icon}
                                         </div>
-                                        <div className="min-w-0"> {/* Prevents text overflow on small screens */}
+                                        <div className="min-w-0">
+
                                             <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400 mb-0.5 md:mb-1">
                                                 {item.label}
                                             </p>
@@ -85,7 +84,6 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        {/* MAP PLACEHOLDER: Hide or resize for mobile */}
                         <div className="h-48 md:h-64 bg-slate-50 rounded-2xl md:rounded-3xl overflow-hidden border border-slate-100 shadow-inner relative group">
                             <div className="absolute inset-0 flex items-center justify-center p-6 text-center">
                                 <p className="text-slate-400 font-bold uppercase tracking-tighter text-xs md:text-sm">
@@ -95,7 +93,6 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    {/* RIGHT COLUMN: The Form (Order 1 on mobile, 2 on desktop) */}
                     <div className="lg:col-span-7 order-1 lg:order-2">
                         <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-xl shadow-slate-200/60 border border-slate-100">
                             <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">Send an Enquiry</h2>
@@ -104,7 +101,7 @@ export default function Contact() {
                             </p>
 
                             <form className="space-y-4 md:space-y-6" onSubmit={(e) => e.preventDefault()}>
-                                {/* Inner Grid for Name/Phone */}
+
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                                     <div className="space-y-1.5 md:space-y-2">
                                         <label className="text-[10px] md:text-xs font-bold uppercase tracking-wider text-slate-900 ml-1">Full Name</label>
@@ -130,7 +127,6 @@ export default function Contact() {
                                             <option>Flex Printing</option>
                                             <option>Custom Fabrication</option>
                                         </select>
-                                        {/* Custom dropdown arrow for better look */}
                                         <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
                                             ▼
                                         </div>

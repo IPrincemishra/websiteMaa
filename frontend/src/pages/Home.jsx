@@ -87,7 +87,7 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
                         <div className="max-w-2xl">
-                            <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-blue-600 mb-4">Our Services</h2>
+                            <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-red-600 mb-4">Our Services</h2>
                             <h3 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight">
                                 Integrated solutions for <br /><strong>modern brands.</strong>
                             </h3>

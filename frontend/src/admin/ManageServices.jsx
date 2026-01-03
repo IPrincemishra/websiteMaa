@@ -98,7 +98,7 @@ const ManageServices = () => {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-linear-to-br from-gray-50 to-gray-100">
                 <div className="relative">
-                    <FaSpinner className="text-6xl text-blue-600 animate-spin" />
+                    <FaSpinner className="text-6xl text-red-600 animate-spin" />
                     <div className="absolute inset-0 rounded-full border-4 border-blue-300 animate-ping"></div>
                 </div>
                 <div className="text-center">
@@ -134,7 +134,7 @@ const ManageServices = () => {
                     <div className="flex items-center gap-4">
                         <div className="hidden md:flex items-center gap-3 bg-white px-5 py-2 rounded-2xl border border-gray-200 shadow-sm">
                             <div className="text-right flex items-center justify-center gap-2">
-                                <FaInfoCircle className="text-blue-500 text-xl" />
+                                <FaInfoCircle className="text-red-500 text-xl" />
                                 <div className="text-xs text-gray-500 uppercase tracking-wide font-medium">Total Services : </div>
                                 <div className="text-2xl font-bold text-gray-900">{services.length}</div>
                             </div>
@@ -212,7 +212,7 @@ const ManageServices = () => {
                                     <div className="flex gap-3 pt-4 border-t border-gray-100">
                                         <button
                                             onClick={() => navigate(`/admin/edit-service/${service._id}`)}
-                                            className="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200"
+                                            className="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 bg-blue-50 text-red-600 hover:bg-blue-100 hover:text-red-700 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200"
                                         >
                                             <FaEdit /> Edit
                                         </button>

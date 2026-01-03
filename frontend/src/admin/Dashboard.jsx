@@ -45,7 +45,7 @@ const Dashboard = () => {
                         className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border border-gray-100">
                         <div className="flex items-start justify-between mb-6">
                             <div className="bg-blue-100 p-4 rounded-full">
-                                <FaCogs className="text-3xl text-blue-600" />
+                                <FaCogs className="text-3xl text-red-600" />
                             </div>
                             <FaArrowRight className="text-gray-400 group-hover:text-black transition-colors duration-200" />
                         </div>
@@ -53,7 +53,7 @@ const Dashboard = () => {
                         <p className="text-gray-600 leading-relaxed">
                             View, edit, and delete existing services. Keep your portfolio up to date.
                         </p>
-                        <div className="mt-6 flex items-center gap-2 text-blue-600 font-semibold text-sm">
+                        <div className="mt-6 flex items-center gap-2 text-red-600 font-semibold text-sm">
                             <span>Manage now</span>
                             <FaArrowRight />
                         </div>

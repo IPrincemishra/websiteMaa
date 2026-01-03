@@ -13,7 +13,7 @@ export default function About() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero Section: Responsive padding and font sizes */}
+
             <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 bg-slate-900 overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
@@ -34,7 +34,7 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Stats Bar: 2x2 grid on mobile, 4-col on desktop */}
+
             <section className="relative -mt-10 md:-mt-16 max-w-7xl mx-auto px-4 md:px-6">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 bg-white p-6 md:p-12 shadow-xl shadow-slate-200/60 rounded-2xl md:rounded-3xl border border-slate-100">
                     {stats.map((stat, index) => (
@@ -47,7 +47,6 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Mission & Vision: Vertical stack on mobile, horizontal on desktop */}
             <section className="max-w-7xl mx-auto px-6 py-16 md:py-32">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
                     <div className="space-y-10 md:space-y-12">
@@ -76,7 +75,6 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Image Placeholder: Scaled for mobile */}
                     <div className="relative mt-8 lg:mt-0">
                         <div className="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-inner flex items-center justify-center border border-slate-100">
                             <div className="text-slate-300 text-center p-8 md:p-12">
@@ -84,7 +82,7 @@ export default function About() {
                                 <p className="font-bold uppercase tracking-widest text-xs md:text-sm italic">Corporate Excellence</p>
                             </div>
                         </div>
-                        {/* Decorative floating card: Hidden on smaller mobile devices for cleanliness */}
+
                         <div className="absolute -bottom-6 -left-6 bg-red-600 p-4 md:p-6 rounded-2xl shadow-xl hidden sm:block">
                             <FaHandshake className="text-white text-3xl md:text-4xl mb-2" />
                             <p className="text-white text-xs md:text-sm font-bold">Trusted by 1000+ <br />Local Businesses</p>
@@ -93,7 +91,6 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Values Section: 1 col -> 2 col -> 3 col responsive grid */}
             <section className="bg-slate-50 py-16 md:py-32">
                 <div className="max-w-7xl mx-auto px-6 text-center mb-12 md:mb-20">
                     <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">Core Principles</h2>
@@ -114,7 +111,6 @@ export default function About() {
                 </div>
             </section>
 
-            {/* CTA Section: Padding adjustments for thumb-friendly mobile buttons */}
             <section className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-24">
                 <div className="bg-red-600 rounded-3xl md:rounded-[3rem] p-8 md:p-20 text-center relative overflow-hidden">
                     <div className="relative z-10">
@@ -126,7 +122,7 @@ export default function About() {
                             Let's Work Together
                         </button>
                     </div>
-                    {/* Background decorations: Scaled down for mobile */}
+
                     <div className="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
                     <div className="absolute bottom-0 left-0 w-24 h-24 md:w-40 md:h-40 bg-black/5 rounded-full translate-y-1/3 -translate-x-1/3" />
                 </div>

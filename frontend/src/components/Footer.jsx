@@ -19,16 +19,15 @@ export default function Footer() {
 
     return (
         <footer className="bg-linear-to-br from-gray-900 via-gray-800 to-black text-gray-300">
-            {/* Main Footer Content */}
+
             <div className="max-w-7xl mx-auto px-6 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
-                    {/* Company Info */}
                     <div className="space-y-6">
                         <div>
                             <NavLink to="/" className="inline-flex items-center gap-3 group">
                                 <div className="w-12 h-12 bg-linear-to-br from-white to-gray-200 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                                    <span className="text-gray-900 font-bold text-xl">MA</span>
+                                    <span className="text-gray-900 font-bold text-xl">MAA</span>
                                 </div>
                                 <h2 className="text-2xl font-bold text-white group-hover:text-gray-200 transition-colors">
                                     MAA Advertising

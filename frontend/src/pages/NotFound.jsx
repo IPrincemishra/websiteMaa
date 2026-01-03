@@ -36,15 +36,15 @@ const NotFound = () => {
                                 </h3>
                                 <ul className="text-left text-gray-600 space-y-2 max-w-md mx-auto">
                                     <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">•</span>
+                                        <span className="text-red-500 mt-1">•</span>
                                         The page might have been moved or deleted
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">•</span>
+                                        <span className="text-red-500 mt-1">•</span>
                                         The URL could be misspelled
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">•</span>
+                                        <span className="text-red-500 mt-1">•</span>
                                         You might be trying to access a restricted area
                                     </li>
                                 </ul>
@@ -76,7 +76,7 @@ const NotFound = () => {
 
                 {/* Footer */}
                 <div className="text-center mt-8 text-gray-500 text-sm">
-                    <p>Need help? <a href="/contact" className="text-blue-600 hover:underline font-medium">Contact Support</a></p>
+                    <p>Need help? <a href="/contact" className="text-red-600 hover:underline font-medium">Contact Support</a></p>
                 </div>
             </div>
         </div>
