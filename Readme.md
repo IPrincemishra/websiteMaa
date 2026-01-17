@@ -9,8 +9,8 @@ This project includes a public marketing website and a secure admin dashboard fo
 
 ## 🔗 Live Preview
 
-- Frontend: Coming soon  
-- Backend API: Coming soon  
+- Frontend: [Click to View](https://websitemaa-frontend.onrender.com/)  
+- Backend Code: [GitHub Repo](https://github.com/IPrincemishra/websiteMaa/tree/main/backend)  
 
 ---
 
