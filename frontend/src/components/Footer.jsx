@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
-    FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock,
+    FaPhoneAlt, FaEnvelope, FaMapMarkerAlt,
     FaFacebook, FaInstagram, FaLinkedin, FaTwitter,
-    FaArrowRight, FaHeart
+    FaArrowRight,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -121,12 +121,17 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-6 py-6">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                         <p className="text-sm text-gray-400">
-                            © {currentYear} MAA Advertising. All rights reserved.
+                            © {currentYear} <Link to="/admin">MAA Advertising.</Link> All rights reserved.
                         </p>
                         <div className="flex items-center gap-2 text-sm text-gray-400">
-                            <span>Made with</span>
-                            <FaHeart className="text-red-500" />
-                            <span>in Chandigarh</span>
+                            <span>Designed & Developed by</span>
+                            <a
+                                href="https://github.com/IPrincemishra"
+                                target="_blank"
+                                className="text-red-500 font-medium hover:text-red-400 transition-colors duration-300"
+                            >
+                                Prince Mishra
+                            </a>
                         </div>
                     </div>
                 </div>

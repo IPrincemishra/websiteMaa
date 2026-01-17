@@ -15,6 +15,7 @@ import ManageServices from "./admin/ManageServices";
 import EditService from "./admin/EditService";
 import PublicLayout from "./layouts/PublicLayout";
 import ServiceDetail from "./pages/ServiceDetail";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
 
         {/* Public */}

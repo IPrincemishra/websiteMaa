@@ -53,6 +53,7 @@ export default function Contact() {
                                     <a
                                         key={idx}
                                         href={item.href}
+                                        target="_blank"
                                         className="flex items-center gap-4 md:gap-5 group"
                                     >
                                         <div className={`w-10 h-10 md:w-12 md:h-12 ${item.color} rounded-xl md:rounded-2xl flex items-center justify-center text-lg transition-transform group-hover:scale-110 shrink-0`}>
